@@ -1,0 +1,56 @@
+
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+h2 {
+    text-align: center;
+    color: #000000;
+}
+
+li a:hover {
+    background-color: #008000;
+    color: white;
+  }
+  
+ul.requests-list {
+    list-style-type: none;
+    padding: 0;
+    max-width: 900px;
+    margin: 0 auto;
+}
+
+ul.requests-list li.request-item {
+    background-color: #fff;
+    margin-bottom: 10px;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+}
+
+button {
+    background-color: #4CAF50;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px; 
+    cursor: pointer;
+    transition: background-color 0.3s;
+    margin-right: 10px; 
+    margin-bottom: 10px; 
+}
+
+button:hover {
+    background-color: #45a049;
+}
+
+form {
+    display: inline-block; 
+}
+
+form + form {
+    margin-left: 10px;
+}

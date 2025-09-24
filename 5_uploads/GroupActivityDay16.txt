@@ -1,0 +1,55 @@
+cd\
+cd program files
+cd mariadb 10.4
+cd bin
+
+mysql -u root -p
+
+create database grpDB;
+
+use grpDB;
+
+create table customer (ID int primary key, firstName varchar(50), lastName varchar (50), phoneNumber varchar(15) ) engine = innodb; 
+
+create table employees (ID int primary key, firstName varchar(50), lastName varchar (50), email varchar(50), phoneNumber varchar(15), jobID int, hiredDate date, locationID int) engine = innodb; 
+
+create table manager (firstName varchar(50), lastName varchar (50), locationID int, email varchar(50), phoneNumber varchar(15) ) engine = innodb;
+
+create table users (ID int primary key, firstName varchar(50), lastName varchar (50), userName varchar(50), password varchar(50), typeID int, locationID int, phoneNumber varchar(15) ) engine = innodb;
+
+create table type (ID int primary key, type varchar(50) ) engine = innodb;
+
+create table job (ID int primary key, jobTitle varchar(50), salary double) engine = innodb;
+
+create table product (ID int primary key, name varchar(50), description varchar (200), qtyStock int, price double, categoryID int) engine = innodb;
+
+create table supplier (ID int primary key, companyName varchar(200), locationID int, phoneNumber varchar(15) ) engine = innodb;
+
+create table category (ID int primary key, name varchar(50), description varchar (200) ) engine = innodb;
+
+create table location (ID int primary key, province varchar (200), city varchar (50), street varchar (200) ) engine = innodb;
+
+show tables;
+
+describe employees; 
+
+select * from employees;
+
+Alter table employees add constraint fkJobID foreign key(jobID) references job(ID); 
+
+<------Nakalimutan ilagay yung job table------->
+ERROR 1005 (HY000): Can't create table `grpdb`.`employees` (errno: 150 "Foreign key constraint is incorrectly formed")
+<---------------------------------------------->
+<------Bawal pala magkatulad ng pangalan yung constraints------->
+ERROR 1005 (HY000): Can't create table `grpdb`.`users` (errno: 121 "Duplicate key on write or update")
+<---------------------------------------------->
+
+Alter table employees add constraint fkLocationID_employees foreign key(locationID) references location(ID); 
+
+Alter table users add constraint fkTypeID foreign key(typeID) references type(ID); 
+
+Alter table users add constraint fkLocationID_users foreign key(locationID) references location(ID);
+
+Alter table product add constraint fkCategoryID foreign key(categoryID) references category(ID);
+
+Alter table supplier add constraint fkLocationID_supplier foreign key(locationID) references location(ID);

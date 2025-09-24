@@ -1,0 +1,84 @@
+body {
+    background: url('../ODR_FINAL/image/background.jpg') no-repeat center center fixed; 
+    background-size: cover;
+    margin: 0;
+    padding: 0;
+}
+.navbar-top {
+    background-color: #212529;
+}
+.navbar-side {
+    background-color: #198754;
+    height: 100vh; 
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start; 
+}
+
+.navbar-dark {
+    background-color: #198754;
+
+}
+.notification-icon {
+    position: relative;
+    cursor: pointer;
+    margin-right: 15px;
+}
+
+.notification-popup {
+    display: none;
+    position: absolute;
+    top: 40px;
+    right: 0;
+    width: 300px;
+    max-height: 400px;
+    overflow-y: auto;
+    background: white;
+    border: 1px solid #ccc;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+    z-index: 1000;
+    border-radius: 5px;
+}
+
+.notification-popup ul {
+    list-style-type: none;
+    padding: 10px;
+    margin: 0;
+}
+
+.notification-popup ul li {
+    padding: 10px;
+    border-bottom: 1px solid #ccc;
+}
+
+.notification-popup ul li:last-child {
+    border-bottom: none;
+}
+.col-sm-2 {
+    padding: 0;
+}
+.navbar-side {
+    height: 100%; 
+    overflow-y: auto; 
+}
+.navbar-side .navbar-nav {
+    flex-grow: 1;
+}
+
+.navbar-side .navbar-nav .nav-link {
+    text-align: left; 
+    padding: 10px 15px; 
+    color: white; 
+    width: 100%; 
+}
+.navbar-side .navbar-nav .nav-item {
+    margin-bottom: 5px; 
+}
+.navbar-side::after {
+    content: '';
+    flex-grow: 1;
+}
+.bg-secondary {
+    background-color: #FFF9ED !important;
+    min-height: 100vh; 
+}
