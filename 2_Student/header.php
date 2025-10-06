@@ -37,10 +37,10 @@ if (isset($_SESSION['user_id'])) {
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="shortcut icon" type="x-icon" href="../3_image/PTC-Logo.png">
     <title>Online Document Request</title>
-    <link href="../../ODR_FINAL/4_bootstrap 5.3/css/bootstrap.min.css" rel="stylesheet">
-    <script src="../../ODR_FINAL/4_bootstrap 5.3/js/bootstrap.bundle.min.js"></script>
+    <link href="../4_bootstrap 5.3/css/bootstrap.min.css" rel="stylesheet">
+    <script src="../4_bootstrap 5.3/js/bootstrap.bundle.min.js"></script>
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
-    <link href="../../ODR_FINAL/CSS/admin_dashboard.css" rel="stylesheet">
+    <link href="../1_Admin/Admin_dashboard.css" rel="stylesheet">
     <link rel="stylesheet" href="../1_Admin/Admin_dashboard.css">
     <link rel="stylesheet" href="header.css">
     
@@ -105,7 +105,7 @@ if (isset($_SESSION['user_id'])) {
     <nav class="navbar navbar-expand-sm navbar-dark navbar-top">
         <div class="container-fluid">
             <a class="navbar-brand titleName" href="">
-                <img src="../../ODR_FINAL/3_image/PTC-Logo.png" alt="PTC-Logo" width="5%">
+                <img src="../3_image/PTC-Logo.png" alt="PTC-Logo" width="5%">
                 <span class="text-light">Online Document Request</span>
             </a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mynavbar">

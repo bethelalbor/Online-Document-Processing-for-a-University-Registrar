@@ -8,7 +8,7 @@
 }
 
 body {
-    background-image: url('../../ODR_FINAL_WEB/3_image/123.jpg');
+    background-image: url('../3_image/123.jpg');
     background-size: cover;
     margin: 0;
     padding: 0;

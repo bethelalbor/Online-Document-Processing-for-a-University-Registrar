@@ -92,7 +92,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
         }
     </script>
 </head>
-<body style="background-image: url('../../ODR_FINAL_WEB/3_image/mybg.png');">
+<body style="background-image: url('../3_image/mybg.png');">
 <?php include 'header.php';?>
     <h2>New Request</h2>
     <?php if (isset($error)) { echo "<p>$error</p>"; } ?>
