@@ -1,0 +1,90 @@
+body  {
+    
+    font-family: Arial bold, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+ul  {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  width: 200px;
+  background-color: #f1f1f1;
+}
+li a  {
+  display: block;
+  color: #000;
+  padding: 0;
+  text-decoration: none;
+}
+li a:hover  {
+  background-color: #008000;
+  color: white;
+}
+h2  {
+    text-align:center;
+    color: #000000;
+}
+form  {
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+label  {
+    display:contents;
+    margin-bottom: 20px;
+}
+
+input[type="text"],
+select,
+textarea  {
+    width: 100%;
+    padding: 8px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+button  {
+    background-color: #008000;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+button:hover  {
+    background-color: #008000;
+}
+.navigation-box  {
+    background-color: #f8f9fa;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    margin-top: 10px;
+}
+.navigation-box ul  {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+.navigation-box li  {
+    display: inline;
+    margin-right: 10px;
+}
+.navigation-box a  {
+    text-decoration: none;
+    color: #333;
+}
+.navigation-box a:hover  {
+    text-decoration: underline;
+    color: #007bff;
+}
+#student_name  {
+    position: fixed;
+    top: 10px;
+    left: 10px;
+    background-color: #008000;
+  }
